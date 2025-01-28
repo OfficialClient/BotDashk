@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bot Website</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <script src="./js/app.js" defer></script>
+    </head>
+    <body>
+        <!-- Header with Navigation -->
+        <header id="main-header">
+            <div class="logo">
+                <p>Bot Name</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a id="login-btn">Login</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="hero">
+            <h1>Welcome to Bot Name</h1>
+            <p>Your ultimate solution for server moderation, economy, and more!</p>
+            <a href="#about" class="cta-btn">Learn More</a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Bot Name</h2>
+            <p>
+                Bot Name is a versatile general-purpose bot, perfect for server moderation, economy systems, and a wide variety of customizable features. Whether you’re a server owner or a member, Bot Name enhances the experience for everyone.
+            </p>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features">
+            <h2>Features</h2>
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-item">
+                    <div class="feature-card">
+                        <div class="feature-card-front">
+                            <h3>Moderation</h3>
+                            <p>Keep your server in check.</p>
+                        </div>
+                        <div class="feature-card-back">
+                            <p>Powerful moderation tools, including auto-moderation, role management, and custom commands.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature 2 -->
+                <div class="feature-item">
+                    <div class="feature-card">
+                        <div class="feature-card-front">
+                            <h3>Economy</h3>
+                            <p>Engage your community.</p>
+                        </div>
+                        <div class="feature-card-back">
+                            <p>Create custom currencies, shop items, and activities to reward your members.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature 3 -->
+                <div class="feature-item">
+                    <div class="feature-card">
+                        <div class="feature-card-front">
+                            <h3>Customization</h3>
+                            <p>Make it yours.</p>
+                        </div>
+                        <div class="feature-card-back">
+                            <p>Customizable settings to fit your server's unique needs and style.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Feature 4 -->
+                <div class="feature-item">
+                    <div class="feature-card">
+                        <div class="feature-card-front">
+                            <h3>Fun Commands</h3>
+                            <p>Bring life to your server.</p>
+                        </div>
+                        <div class="feature-card-back">
+                            <p>Games, memes, and fun commands to entertain your community.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="dynamic-icons">
+            <div class="icon-container" id="dynamicIcon1">
+                <a href="#" draggable="false"><img src="./images/app.ico" draggable="false"></a>
+                <span class="icon-text">Join the discord!</span>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer id="footer">
+            <div class="footer-grid">
+                <!-- Navigation Links -->
+                <div class="footer-column">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#features">Features</a></li>
+                    </ul>
+                </div>
+                <!-- Support Links -->
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- Social Links -->
+                <div class="footer-column">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Discord</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copy">
+                &copy; 2025 Bot Name. All rights reserved.
+            </div>
+        </footer>
+
+        <script>
+            // Shrinks header on scroll
+            const header = document.getElementById('main-header');
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('shrunk');
+                } else {
+                    header.classList.remove('shrunk');
+                }
+            });
+
+            // Simulating login ability
+            document.getElementById('login-btn').addEventListener('click', () => {
+                alert('Redirecting to dashboard...');
+                window.location.href = 'dashboard.html';
+            });
+        </script>
+    </body>
+</html>
